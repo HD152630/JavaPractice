@@ -52,6 +52,7 @@ public class Loop {
 					scanner.close();
 					break;
 				default:
+					System.out.println("없는 메뉴입니다.");
 					break;
 			}
 		}while(choice != 9);
