@@ -7,7 +7,7 @@ import java.util.Scanner;
  * <pre>
  * org.dimigo.basic
  *   |_ Loop
- * 1. 개요 : 
+ * 1. 개요 : 자바 실습 과제3 
  * 2. 작성일 : 2017. 3. 16.
  * </pre>
  *
