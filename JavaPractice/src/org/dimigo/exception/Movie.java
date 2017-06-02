@@ -11,12 +11,13 @@ package org.dimigo.exception;
  * 2. 작성일 : 2017. 5. 30.
  * </pre>
  *
- * @author 		: Administrator
- * @version		: 1.0
+ * @author : Administrator
+ * @version : 1.0
  */
 public class Movie {
 	private String title;
 	private int limitAge;
+
 	/**
 	 * 
 	 */
@@ -24,22 +25,25 @@ public class Movie {
 		this.title = title;
 		this.limitAge = limitAge;
 	}
+
 	public String getTitle() {
 		return title;
 	}
+
 	public int getLimitAge() {
 		return limitAge;
 	}
+
 	public void buyTicket(int age) throws Exception {
-		try{
-			if(age<limitAge){
+		try {
+			if (age < limitAge) {
 				throw new Exception(title + "은/는 " + limitAge + "세 이상 관람가입니다.");
 			}
 			System.out.println(title + " 즐감하세요.");
-		}catch (Exception e) {
+		} catch (Exception e) {
 			// TODO: handle exception
 			throw e;
 		}
 	}
-	
+
 }
